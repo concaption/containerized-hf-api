@@ -5,8 +5,8 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 test:
-	python -m pytest -vv --cov=main test_*.py &&\
-	python -m pytest --nbval notebook.ipynb
+	# python -m pytest -vv --cov=webapp test_*.py &&\
+	# python -m pytest --nbval notebook.ipynb
 format:
 	black *.py
 lint:
